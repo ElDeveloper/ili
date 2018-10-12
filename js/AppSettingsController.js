@@ -21,7 +21,7 @@ function (Workspace, TabControllerSpots, TabController3D, TabControllerMapping, 
         this._tabs['examples'] = tabExamples;
         this._tabs['doc'] = this._addTab(TabControllerDocumentation, this._views);
 
-        tabExamples.activate();
+        this._tabs.doc.activate();
 
         this._workspace.addEventListener(Workspace.Events.MODE_CHANGE, function () {
             if (this._workspace.mode === Workspace.Mode.MODE_2D) {
