@@ -224,9 +224,11 @@ function (Workspace, ViewContainer, ViewGroup3D, MapSelector, ColorMap, saveAs, 
 
         _processAddressLine: {
             value: function() {
-                if (window.location.search) {
+                if (true) {
                     this._clickControlSwitch();
-                    var fileNames = window.location.search.substr(1).split(';');
+                    // these files are going to be loaded from the workers' directory
+                    var fileNames = ['./model.stl',
+                                     './features.csv'];
                     this._workspace.download(fileNames);
                 }
             }

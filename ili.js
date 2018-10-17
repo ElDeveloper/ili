@@ -1,7 +1,7 @@
 define('ili', [], function () {
 return function (container, baseUrl) {
 
-    baseUrl = baseUrl || '/';
+    baseUrl = baseUrl || './';
 
     loadCss(baseUrl + 'js/lib/css/bootstrap.min.css');
     loadCss(baseUrl + 'js/lib/css/bootstrap-colorpicker.min.css');

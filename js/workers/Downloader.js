@@ -116,7 +116,7 @@ require({
     Downloader.Item = function(fileName) {
         this.fileName = fileName;
         this.request = new XMLHttpRequest();
-        this.request.open('GET', Downloader.FILE_SERVICE + '?' + fileName, true);
+        this.request.open('GET', fileName, true);
         this.request.responseType = 'blob';
         this.total = NaN;
         this.loaded = 0;
